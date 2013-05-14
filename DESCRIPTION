@@ -1,0 +1,16 @@
+Package: preroll
+Maintainer: Adam Hyland <achyland@bocoup.com>
+Authors@R: c( person("Adam", "Hyland", role = c("aut", "cre"), email =
+    "achyland@bocoup.com"))
+Author: Adam Hyland
+Version: 0.1
+License: MIT
+Title: Singleton package with one goal
+Description: the simplest possible way to add an R function to rpy2. What is
+    the world coming to?
+Depends:
+    R (>= 2.14)
+Imports:
+    RJSONIO
+Collate:
+    'preroll.R'
