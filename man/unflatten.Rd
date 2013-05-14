@@ -3,11 +3,9 @@
 \title{Build square matrix of legislator votes and names
   for import to pscl}
 \usage{
-  unflatten(data, json = NULL)
+  unflatten(json)
 }
 \arguments{
-  \item{data}{List of legislator names and votes}
-
   \item{json}{Character vector showing file path}
 }
 \value{

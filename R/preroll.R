@@ -3,18 +3,13 @@
 #'
 #' Takes a ragged array or a json object representing a ragged array
 #'
-#' @param data List of legislator names and votes
 #' @param json Character vector showing file path 
 #' @return Matrix of vote results
 #'   
 #' @export
-unflatten <- function(data, json = NULL) {
+unflatten <- function(json) {
   require(RJSONIO)
-  if (!is.null(data)) {
-    legis.list <- data
-  } else {
-    legis.list <- fromJSON(json)
-  }
+  legis.list <- fromJSON(json)
   # build vectors of possible names
   # bit magical, but we strip list names, then
   # convert to a flat character vector and extract those
