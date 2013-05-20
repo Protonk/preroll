@@ -26,7 +26,7 @@ unflatten <- function(json) {
     prefill[match(names(orig), legis.names)] <- orig
     return(prefill)
   }
-  square <- lapply(json, sortStretch)
+  square <- lapply(legis.list, sortStretch)
   # pack into a matrix, now that they are the same length
   # then transpose because that's what rollcall() expects
   out.mat <- t(do.call(rbind, square))
