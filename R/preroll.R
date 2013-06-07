@@ -7,8 +7,8 @@
 #' @return Matrix of vote results
 #'   
 #' @export
+#' @importFrom RJSONIO fromJSON
 unflatten <- function(json) {
-  require(RJSONIO)
   legis.list <- fromJSON(json)
   # build vectors of possible names
   # bit magical, but we strip list names, then
